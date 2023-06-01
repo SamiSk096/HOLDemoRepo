@@ -50,6 +50,7 @@
             "apiVersion": "2019-10-01",
             "resourceGroup": "[parameters('SecondaryRG')]",
             "dependsOn": [
+                "VirtualNetworkSecondaryWithPrimaryDNS"
             ],
             "properties": {
                 "mode": "Incremental",
@@ -94,7 +95,7 @@
             "apiVersion": "2019-10-01",
             "resourceGroup": "[parameters('SecondaryRG')]",
             "dependsOn": [
-                "Peering"
+
             ],
             "properties": {
                 "mode": "Incremental",
